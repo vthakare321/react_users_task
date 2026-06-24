@@ -169,10 +169,6 @@ To provide a better user experience:
 ## Limitations
 
 Since DummyJSON is a fake REST API:
-
-- Add user is simulated.
-- Update user is simulated.
-- Delete user is simulated.
 - Data changes are not persisted on the server.
 
 ---
@@ -202,10 +198,4 @@ npm run dev
 ## Future Improvements
 
 - Toast notifications
-- Debounced search
-- Modal-based add/edit forms
-- Dark mode
 - Sorting
-- Better pagination component
-- Unit testing
-- Skeleton loaders
