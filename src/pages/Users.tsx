@@ -39,17 +39,6 @@ const Users = () => {
 
   const localUsers = getLocalUsers();
 
-  // const filteredLocalUsers =
-  //   localUsers.filter(
-  //     (user) =>
-  //       `${user.firstName} ${user.lastName}`
-  //         .toLowerCase()
-  //         .includes(search.toLowerCase()) ||
-  //       user.email
-  //         .toLowerCase()
-  //         .includes(search.toLowerCase())
-  //   );
-
 const usersToDisplay = search
   ? [
       ...localUsers,
@@ -108,7 +97,7 @@ const usersToDisplay = search
         {usersToDisplay.map((user) => (
           <div
             key={user.id}
-            className="bg-white rounded-2xl shadow p-6"
+            className="bg-white rounded-2xl "
           >
             <h2 className="text-xl font-bold">
               {user.firstName}{" "}

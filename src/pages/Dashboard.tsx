@@ -10,7 +10,7 @@ const Dashboard = () => {
       </h1>
 
       <div className="grid md:grid-cols-3 gap-6">
-        <div className="bg-white rounded-2xl shadow p-6">
+        <div className="bg-white rounded-2xl ">
           <h3 className="text-gray-500">
             Total Users
           </h3>
@@ -20,7 +20,7 @@ const Dashboard = () => {
           </h1>
         </div>
 
-        <div className="bg-white rounded-2xl shadow p-6">
+        <div className="bg-white rounded-2xl ">
           <h3 className="text-gray-500">
             Active Users
           </h3>
@@ -30,7 +30,7 @@ const Dashboard = () => {
           </h1>
         </div>
 
-        <div className="bg-white rounded-2xl shadow p-6">
+        <div className="bg-white rounded-2xl ">
           <h3 className="text-gray-500">
             Inactive Users
           </h3>
