@@ -50,7 +50,7 @@ const user = localUser || apiUser;
         lastName: user.lastName,
         email: user.email,
         role: user.role,
-        status: user.status,
+        status: user.status || "active",
       }}
       onSubmit={handleSubmit}
       onCancel={() => navigate("/users")}

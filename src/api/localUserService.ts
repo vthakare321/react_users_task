@@ -1,20 +1,20 @@
 import type { User } from "../types/user.types";
 
 
-export const getLocalUsers = () => {
+export const getLocalUsers = (): User[] => {
   return JSON.parse(
     localStorage.getItem("localUsers") || "[]"
   );
 };
 
-export const saveLocalUsers = (users: any[]) => {
+export const saveLocalUsers = (users: User[]) => {
   localStorage.setItem(
     "localUsers",
     JSON.stringify(users)
   );
 };
 
-export const addLocalUser = (user: any) => {
+export const addLocalUser = (user: User) => {
   const users = getLocalUsers();
 
   saveLocalUsers([user, ...users]);
